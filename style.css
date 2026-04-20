@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo */
+body {
+    background-color: #14283a;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Menu */
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #aaaaaa;
+    font-weight: bold;
+}
+
+/* REQUISITO QA */
+nav a.active {
+    color: white;
+    background-color: #007bff;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+/* Título */
+h1 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* Input */
+#campo-busca {
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+p{
+    color: #aaaaaa
+}
+
+/* Botão */
+#btn-busca {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* REQUISITO QA */
+#btn-busca:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Resultado */
+#resultado {
+    margin-top: 20px;
+}
+
+/* Link */
+#link-detalhes {
+    display: none;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* Área de detalhes */
+#info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Imagem */
+img {
+    width: 120px;
+    margin: 10px 0;
+}
+
+/* Peso e altura */
+.dado {
+    display: block;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.btn-voltar {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #dc3545; /* vermelho */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hover */
+.btn-voltar:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
