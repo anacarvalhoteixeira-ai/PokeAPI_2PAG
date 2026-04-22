@@ -38,7 +38,7 @@ if (window.location.pathname.includes('sobre.html')) {
     const params = new URLSearchParams(window.location.search);
     const nome = params.get('nome');
 
-    const container = document.querySelector('detalhes-container');
+    const container = document.getElementById('detalhes-container');
 
     if (nome) {
     fetch(`https://pokeapi.co/api/v2/pokemon/${nome}`)
