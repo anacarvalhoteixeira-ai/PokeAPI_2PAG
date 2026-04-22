@@ -23,7 +23,8 @@ if (document.getElementById('btn-busca')) {
                 link.style.display = 'inline-block';
             })
             .catch(() => {
-                alert('Pokémon não encontrado');
+                const resultado = document.getElementById('resultado');
+                resultado.innerHTML = '<p id="erro">Pokémon não encontrado</p>';
                 link.style.display = 'none';
             })
             .finally(() => {
@@ -37,7 +38,7 @@ if (window.location.pathname.includes('sobre.html')) {
     const params = new URLSearchParams(window.location.search);
     const nome = params.get('nome');
 
-    const container = document.querySelector('p');
+    const container = document.querySelector('detalhes-container');
 
     if (nome) {
     fetch(`https://pokeapi.co/api/v2/pokemon/${nome}`)
